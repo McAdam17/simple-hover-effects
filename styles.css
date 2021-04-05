@@ -1,0 +1,36 @@
+.full-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.container{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .div-img{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.container .div-img img{
+    width: 100%;
+    transform: scale(1.2);
+    transition-property: transform;
+    transition-duration: 500ms;
+}
+
+.container .div-img img:hover{
+    transform: scale(1);
+}
+
+
+
+
+
