@@ -1,6 +1,7 @@
 .full-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -11,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .container .div-img{
@@ -29,6 +31,70 @@
 .container .div-img img:hover{
     transform: scale(1);
 }
+
+.cont-2 .div-img img{
+    transform: scale(1);
+}
+
+.cont-2 .div-img img:hover{
+    transform: scale(1.2);
+}
+
+.cont-3 .div-img img{
+    width: 250px;
+    height: 250px;
+    transform: scale(1);
+    transition-property: border-radius,transform;
+} 
+
+.cont-3 .div-img{
+    overflow: visible;
+}
+
+.cont-3 .div-img img:hover{
+    transform: scale(0.8);
+    border-radius: 10%;
+}
+
+.cont-4 .div-img{
+    overflow: visible;
+   
+}
+
+.cont-4 .div-img .img{
+    transform: scale(1);
+    border-radius: 10px;
+}
+
+.cont-4 .text{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    font-weight: bold;
+    transition: opacity 500ms,bottom 500ms;
+}
+
+.cont-4:hover .text{
+    bottom: 25px;
+    opacity: 1;
+}
+
+.cont-4 .div-img{
+    transition: transform 700ms;
+}
+
+.cont-4:hover .div-img{
+    transform: scale(0.8);
+}
+
+
+
+
+
+
+
+
+
 
 
 
