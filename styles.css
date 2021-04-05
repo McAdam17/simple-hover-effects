@@ -184,4 +184,78 @@
 }
 
 
+.cont-8 .div-img{
+    overflow: visible;
+}
+
+.cont-8 .div-img .img{
+    transform: scale(1);
+}
+
+.cont-8 .text{
+    position: absolute;
+    font-size: 16px;
+    bottom: 22px;
+    right: 50px;
+    opacity: 0;
+    transition: opacity 700ms,right 700ms;
+}
+
+.cont-8:hover .text{
+    right: 25px;
+    opacity: 1;
+}
+
+.cont-8:hover .div-img .img{
+    transform: translate(-45px,-45px) scale(0.75);
+
+}
+
+.cont-9 .div-img{
+    overflow: hidden;
+}
+
+.cont-9 .div-img .img{
+    transform: scale(1);
+    height: 100%;
+    width: 400px;
+    transition: margin-left 700ms;
+}
+
+.cont-9:hover .div-img .img{
+    margin-left: -60%;
+}
+
+.cont-10 .div-img{
+    overflow: hidden;
+}
+
+.cont-10 .div-img .img{
+    transform: scale(1);
+    transition-property: transform,border-radius;
+}
+
+.cont-10 .text{
+    position: absolute;
+    font-size: 22px;
+    bottom: 0px;
+    opacity: 0;
+    transition-property: opacity,bottom,font-size;
+    transition-duration: 700ms;
+}
+
+.cont-10:hover .text{
+    font-size: 26px;
+    bottom: 50px;
+    opacity: 1;
+}
+
+.cont-10:hover .div-img .img{
+    transform: scale(0.5) translateY(-100px);
+    border-radius: 50%;
+}
+
+
+
+
 
