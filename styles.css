@@ -88,15 +88,100 @@
 }
 
 
+.cont-5 .div-img{
+    overflow: visible;
+    transition: transform 700ms;
+}
+
+.cont-5 .div-img .img{
+    transform: scale(1);
+    border-radius: 50%;
+}
 
 
+.cont-5 .text{
+    position: absolute;
+    right: 50px;
+    z-index: 1;
+    transition: right 700ms;
+}
+
+.cont-5 .div-img{
+    z-index: 2;
+}
+
+.cont-5:hover .div-img{
+    transform: translateX(-50%);
+}
+
+.cont-5:hover .text{
+    right: 25px;
+}
 
 
+.cont-6 .div-img{
+    overflow: hidden;
+    transition: border 800ms ease-in 700ms;
+}
+
+.cont-6 .div-img .img{
+    transform: scale(1);
+    border-radius: 50%;
+    transition: transform 700ms;
+}
+
+.cont-6 .text{
+    position: absolute;
+    left: 35px;
+    opacity: 0;
+    z-index: -1;
+    transition-property: left,opacity;
+    transition-duration: 700ms;
+}
 
 
+.cont-6:hover .div-img img{
+    transform: translateX(50%);
+}
+
+.cont-6:hover .div-img{
+    border: 2px solid #000;
+}
+
+.cont-6:hover .text{
+    opacity: 1;
+    left: 26px;
+}
 
 
+.cont-7 .div-img{
+    overflow: visible;
+}
 
+.cont-7 .div-img .img{
+    transform: scale(1);
+    
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 200ms;
+    animation-play-state: paused;
+}
+
+@keyframes rotarImg {
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateZ(-360deg);
+    }
+}
+
+.cont-7:hover .div-img .img{
+    animation-name: rotarImg;
+    animation-play-state: running;
+    animation-timing-function: ease;
+}
 
 
 
